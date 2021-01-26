@@ -11,7 +11,7 @@
 
 
 
-<title>About</title>
+<title>Services</title>
 
 <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -260,6 +263,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -267,6 +333,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -304,28 +380,144 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About</h1>
+<h1 class="title toc-ignore">Services</h1>
 
 </div>
 
 
-<p>This is just a minimal example website. Its content is not meaningful beyond providing an example.</p>
-<div class="figure" style="text-align: center">
-<img src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="These are some nice photos" width="49%" height="20%" /><img src="https://images.pexels.com/photos/4430317/pexels-photo-4430317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="These are some nice photos" width="49%" height="20%" />
-<p class="caption">
-These are some nice photos
-</p>
-</div>
+<p>We don’t provide any services. If we did, they might not even be good. So maybe it’s best that we don’t provide any services in the first place. Nevertheless, you can read about some services on this page, which features a floating table of contents on the left.</p>
+<p>Below, you can explore the services that we don’t provide in an unnecessary amount of detail!</p>
+<p><br><br></p>
+<div id="counting" class="section level1">
+<h1>Counting</h1>
+<p><strong>Haven’t you always wanted someone to do your counting for you? Don’t you get tired when counting on your own?</strong></p>
+<p>We have the solution you have always wanted!</p>
+<p>Our team members have a vast amount of counting experience. We can count for you up to any number you want that is under 100,000. We will send you a recording of the count or a document containing the counted numbers for you to visually inspect.</p>
+<p><br><br></p>
+<div id="available-formats" class="section level2">
+<h2>Available formats</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;">
+<div>
+<p><br><br></p>
 <ul>
-<li>The design for this site was adapted from <a href="https://github.com/rstudio/rmarkdown-website-examples" class="uri">https://github.com/rstudio/rmarkdown-website-examples</a>.</li>
-<li>All images used in this website are from <a href="http://pexels.com" target="_blank">Pexels</a>.</li>
+<li><p>Text document</p></li>
+<li><p>Human audio recording</p></li>
+<li><p>Computer generated audio recording</p></li>
+<li><p>Additional formats are available upon request</p></li>
 </ul>
+</div>
+<div>
+<p><img src="https://images.pexels.com/photos/1329297/pexels-photo-1329297.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" /></p>
+</div>
+</div>
+<p><br><br></p>
+</div>
+<div id="pricing" class="section level2">
+<h2>Pricing</h2>
+<table>
+<colgroup>
+<col width="75%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Format</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Text document</td>
+<td>USD $15, flat rate</td>
+</tr>
+<tr class="even">
+<td>Human audio recording</td>
+<td>USD $15/hour</td>
+</tr>
+<tr class="odd">
+<td>Computer generated audio recording</td>
+<td>USD $30, flat rate</td>
+</tr>
+<tr class="even">
+<td>Text document + computer generated audio recording <strong>bundle</strong></td>
+<td>USD $35, flat rate</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+</div>
+</div>
+<div id="eating-demonstration-videos" class="section level1">
+<h1>Eating demonstration videos</h1>
+<p><strong>Are you having trouble eating or know someone who needs help?</strong></p>
+<p>Our simple eating demonstration videos are just the thing you need!</p>
+<p>We will prepare high quality videos for you that show people eating. We will take care of all the details. Just sit back and relax as we take care of all the details prepare a video for you.</p>
+<p>We can also help you share your video with an audience of your choosing, on a platform such as <a href="http://youtube.com" target="_blank">YouTube</a>, on <a href="https://en.wikipedia.org/wiki/Social_media" target="_blank">social media</a>, or anywhere else you would like!</p>
+<p><br><br></p>
+<div id="available-options" class="section level2">
+<h2>Available options</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;">
+<div>
+<p><img src="https://images.pexels.com/photos/4910377/pexels-photo-4910377.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" /></p>
+</div>
+<div>
+<p><br><br><br></p>
+<ul>
+<li><p>Eating video</p></li>
+<li><p>Eating video with closed captions</p></li>
+<li><p>Eating video with closed captions and written transcript</p></li>
+</ul>
+</div>
+</div>
+<p><br><br></p>
+</div>
+<div id="pricing-1" class="section level2">
+<h2>Pricing</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eating video</td>
+<td>USD $4/minute</td>
+</tr>
+<tr class="even">
+<td>Eating video with closed captions</td>
+<td>USD $6/minute</td>
+</tr>
+<tr class="odd">
+<td>Eating video with closed captions and written transcript</td>
+<td>USD $10/minute</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+</div>
+<div id="frequently-asked-questions" class="section level2">
+<h2>Frequently asked questions</h2>
+<p><br></p>
+<div id="can-i-choose-what-food-is-eaten-in-the-video" class="section level3">
+<h3>Can I choose what food is eaten in the video?</h3>
+<p>No! We take care of all the details, including what food is eaten in the video. Remember: we know much more about this than you do.</p>
+</div>
+<div id="do-you-have-any-business-to-business-discounts-available" class="section level3">
+<h3>Do you have any business-to-business discounts available?</h3>
+<p>Yes! Our corporate relations team will be more than happy to discuss a bulk or corporate discount with you. Please go outside and yell “Save the pandas!” as loud as you can to summon a team member who will be happy to assist you. We will dispatch a team member to your location as soon as we are able to hear you, if one is available. Be sure to yell every five minutes until a team member arrives, so that they can easily locate you.</p>
+</div>
+</div>
+</div>
 
 <hr>
 
 <p>Created by Anshul Kumar in January 2021. </p>
 
 
+</div>
+</div>
 
 </div>
 
@@ -358,6 +550,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
