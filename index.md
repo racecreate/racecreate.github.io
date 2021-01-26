@@ -1,3 +1,13 @@
+---
+title: Main page
+layout: template
+filename: index.md
+--- 
+
+# test
+
+this is a test on monday!
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/racecreate/racecreate.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
